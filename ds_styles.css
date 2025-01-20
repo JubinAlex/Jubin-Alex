@@ -1,0 +1,36 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+/* Container */
+.gallery-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Gallery Grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px; /* Minimal distance between photos */
+  padding: 10px;
+}
+
+/* Image Styling */
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover Effect */
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
